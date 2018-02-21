@@ -24,7 +24,7 @@ from av_dataset_config import AvConfig
 ROOT_DIR = os.getcwd()
 
 # Directory to save logs and trained model
-MODEL_DIR = os.path.join(ROOT_DIR, "logs")
+MODEL_DIR = os.path.join(ROOT_DIR + '/av_test', "logs")
 
 
 class InferenceConfig(AvConfig):
