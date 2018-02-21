@@ -72,6 +72,5 @@ class AvDataset(Dataset):
         '''
         info = self.image_info[image_id]
         mask = np.zeros([info['height'], info['width']], dtype=np.uint8)
-        # move from relative to absolute coord
         mask = vert_to_mask(info['vertices'], info['width'], info['height'])
         return np.expand_dims(mask, 2), np.array([1], dtype=np.int32)

@@ -58,5 +58,5 @@ data_val.load_dataset(dataset)
 data_val.prepare()
 
 # start training
-model.train(data_train, data_val, learning_rate=config.LEARNING_RATE, epochs=10,
+model.train(data_train, data_val, learning_rate=config.LEARNING_RATE, epochs=1,
             layers='heads')
