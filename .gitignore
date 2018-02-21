@@ -3,4 +3,5 @@ logs/
 *.h5
 av_test
 *.swo
+*.swp
 prediction/
